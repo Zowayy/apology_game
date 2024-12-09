@@ -1,0 +1,73 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c9d6df; /* A light background color */
+  }
+  
+  #gameCanvas {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Character Styles */
+  img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    transform: scaleX(-1); /* Both characters face the same direction */
+  }
+  
+  /* Dialogue Box */
+  #dialogueBox {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: none;
+  }
+  
+  /* Choices Buttons */
+  #choices {
+    margin-top: 10px;
+  }
+  
+  .choice {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .choice:hover {
+    background-color: #0056b3;
+  }
+
+  .choice:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    .character {
+      width: 40%;
+    }
+  }
+  
+  

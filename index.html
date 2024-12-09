@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apology Chase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="gameCanvas">
+    <img id="chaser" src="assets/chaser.jpg" alt="Chaser">
+    <img id="chasee" src="assets/chasee.jpg" alt="Chasee">
+    <div id="dialogueBox" class="hidden">
+      <p id="dialogueText"></p>
+      <div id="choices" class="hidden">
+        <button class="choice" data-response="accept">I forgive you!</button>
+        <button class="choice" data-response="reject">I need some time...</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
