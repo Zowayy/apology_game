@@ -18,7 +18,6 @@ body {
     position: absolute;
     width: 100px;
     height: auto;
-    transform: scaleX(-1); /* Both characters face the same direction */
   }
   
   /* Dialogue Box */
